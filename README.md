@@ -1,2 +1,2 @@
-# cruachanequinox
+# The Cruachan Equinox
  
