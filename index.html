@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Archaeoastronomy">
+    <meta name="author" content="Brian Doyle">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>The Cruachan Equinox</title>
+    
+            
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    
+    <!-- Other stylesheets here-->
+    <link href="css/leaflet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/leaflet-extra-markers@1.1.0/dist/css/leaflet.extra-markers.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.css">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+    
+    
+    <!-- cruachan blue #526392--> 
+    
+    
+ </head>
+
+<!-- Leaflet js -->    
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js"></script> -->
+     <script src="js/leaflet.js"></script>
+    
+<body>
+
+<nav id="navbar-k52" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><i class="far fa-dot-circle"></i>&nbsp;Kerbstone52</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Index</a>
+                <div class="dropdown-menu dropdown-menu-right scrollable-menu" aria-labelledby="dropdown01">
+                    <h6 class="dropdown-header text-primary">Introduction</h6>
+                    <a class="dropdown-item" href="#slide1">Title</a>
+                    <a class="dropdown-item" href="#slide2">The Premise</a>
+                    <h6 class="dropdown-header text-primary">Locations</h6>
+                    <a class="dropdown-item" href="#slide3">Rathcroghan Mound<sup>1</sup></a>
+                    <a class="dropdown-item" href="#slide4">Corn Hill<sup>2</sup></a>
+                    <a class="dropdown-item" href="#slide5">Rathra<sup>3</sup></a>
+                    <a class="dropdown-item" href="#slide6">Croagh Patrick<sup>4</sup></a>
+                    <h6 class="dropdown-header text-primary">Developing the Hypothesis</h6>
+                    <a class="dropdown-item" href="#slide7">Establish Potential (Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup>)</a>
+                    <a class="dropdown-item" href="#slide8">Determine Visibility (Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup>)</a>
+                    <a class="dropdown-item" href="#slide9">Assessment (Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup>)</a>
+                    <a class="dropdown-item" href="#slide10">Modelling (Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup>)</a>
+                    <h6 class="dropdown-header text-primary">Developing the Hypothesis</h6>
+                    <a class="dropdown-item" href="#slide11">Establish Potential (Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup>)</a>
+                    <a class="dropdown-item" href="#slide12">Determine Visibility (Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup>)</a>
+                    <a class="dropdown-item" href="#slide13">Assessment (Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup>)</a>
+                    <a class="dropdown-item" href="#slide14">Modelling (Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup>)</a>
+                    <h6 class="dropdown-header text-primary">Ground Truthing the Hypothesis</h6>
+                    <a class="dropdown-item" href="#slide15">Equinox Images</a>
+                    <h6 class="dropdown-header text-primary">About</h6>
+                    <a class="dropdown-item" href="#slide16">About the presentation</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+                  <li class="hidden-xs"><a href="https://github.com/briandoylegit/cruachanequinox" target="_blank" class="text-white py-1 text-decoration-none ml-auto mx-sm-0 order-0 order-sm-last" title="View project on GitHub"><i class="fab fa-github"></i></a>
+                  </li>
+               </ul>
+
+    </div>
+</nav>
+
+    <main role="main" class="container-fluid slidecolour2" id="map">
+
+        
+        <div class="row">
+        <div data-spy="scroll" data-target="#navbar-k52" data-offset="0"class="col-4 slidecolour2 content slidecontent" id="slidecontent">
+            
+            <!-- Slide begin -->
+            <div id="slide1" class="col-12 fullheight introcolour slide1">
+            
+            <!-- Slide nav up -->  
+            <div class="col-sm-12" style="height:25px;"></div>
+            
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-center slide1"><h1 class="display-4 text-white">The</h1></div>
+            <div class="col-sm-12 text-center"><h1 class="display-4 text-white">Cruachan</h1></div>
+            <div class="col-sm-12 text-center"><h1 class="display-4 text-white">Equinox</h1></div>
+            <div class="col-sm-12" style="height:25px;"></div>
+            <div class="col-sm-12 text-center"><p class="text-white">Brian Doyle 2019</p></div>
+                        
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide2"<i class="fas fa-angle-down text-white" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+            
+            
+            
+            <!-- Slide begin -->
+            <div id="slide2" class="col-12 fullheight defaulttext slide2">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide1" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-center text-primary slide2"><h3>The Cruachan Equinox</h3></div>
+            <div class="col-sm-12 bd-callout bd-callout-danger"><p><em>The premise:</em></p><p>The ancient Irish afforded special significance to locations where they could observe, on specific divisional days of the year, the sun rise from, or set into, what they regarded as sacred mountains.</p></div>
+            <div class="col-sm-12"><p><em>Specifically in the Cruachan context:</em></p></div>
+            <div class="col-sm-12"><p><b>Rathcroghan Mound</b><sup>1</sup> has been positioned to observe the equinox sun rise from <b>Corn Hill</b><sup>2</sup>.</p></div>
+            <div class="col-sm-12"><p><b>Rathra Ceremonial Enclosure</b><sup>3</sup> has been positioned to observe the equinox sun set into <b>Croagh Patrick</b><sup>4</sup>.</p></div>
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide3" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+    
+    
+            <!-- Slide begin -->
+            <div id="slide3" class="col-12 fullheight defaulttext slide3">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide2" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide3"><h6>Locations</h6></div>
+            <div class="col-sm-12 text-primary"><h4>Rathcroghan Mound<sup>1</sup></h4></div>
+            <div class="col-sm-12"><p>Rathcroghan is identified as the site of Cruachan, the traditional capital of the Connachta, the prehistoric and early historic rulers of the western territory.</p></div>
+            <div class="col-sm-12"><p>The focal point of the complex, Rathcroghan mound is a broad, flat-topped circular mound with an average diameter of 89 m at the base and a height of 5.5 m. Surveying has revealed that Rathcroghan mound was built on top of an existing monument that was made of two concentric stone built ring banks. A huge enclosure measuring 360 m in diameter and 5 m in depth was also discovered during surveying. This enclosure surrounds the great mound and various other monuments, facilitating comparisons with other royal sites in Ireland such as Tara, Emain Macha and Dún Ailinne, which have similar enclosures.</p></div>
+            <div class="col-sm-12"><p>Cruachan features prominently in the mythological Ulster Cycle and it was the home of one of its chief characters Queen Medb.</p></div>
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide4" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+            
+            <!-- Slide begin -->
+            <div id="slide4" class="col-12 fullheight defaulttext slide4">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide3" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide4"><h6>Locations</h6></div>
+            <div class="col-sm-12 text-primary"><h4>Corn Hill<sup>2</sup></h4></div>
+            <div class="col-sm-12"><p>Corn Hill, also called Carn Hill or Carn Clonhugh (Irish: Carn Clainne Aodha or Sliabh Cairbré), is a hill in County Longford, Republic of Ireland. At 278 metres above sea level, it is the highest hill in the county. The hill is particularly important for the two possible passage grave structures atop it. The largest example is Cairn A (or Carn Caille), marking the highest physical point of the hill with a diameter of 18 m and height of 3 m.</p></div>
+            <div class="col-sm-12"><p>Cairn A (or Carn Caille) has a legend which associates the location as the burial place of Queen Medb's nephew and murderer, Furbaide Ferbend. A second legend attributes its creation by the Cailleach a Bheara or ancient Hag/Witch who dropped stones out of her apron as she flew over the hill. This legend is also associated with many Passage grave sites throughout the island of Ireland.</p></div>
+            <div class="col-sm-12"><p>The Sheegeeragh Passage tomb (approx 8 Kilometers sw from Rathcroghan mound) has a passage which is directed at Corn Hill.</p></div>
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide5" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide5" class="col-12 fullheight defaulttext slide5">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide4" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide5"><h6>Locations</h6></div>
+            <div class="col-sm-12 text-primary"><h4>Rathra<sup>3</sup></h4></div>
+            <div class="col-sm-12"><p>Rathra is a  multivallate ceremonial enclosure, near Castlerea, County Roscommon, Ireland. This is one of only a handful of quadri-vallate (four banks) enclosures in the whole of Ireland and probably the most spectacular. The Rathra Enclosure lies near the archaeological monuments known as the Rathcroghan Complex and this enclosure is sometimes considered to be part of this group.</p></div>
+            <div class="col-sm-12"><p>The enclosure contains a bowl barrow and a mound barrow which originally had a standing stone on it's summit.</p></div>
+            <div class="col-sm-12"><p>The site sits just off the shoulder of Mewlaghadooey Hill, the summit of which is c. 700m to the ESE and is occupied by a hillfort containing a mound which may be a passage tomb.</p></div>
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide6" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide6" class="col-12 fullheight defaulttext slide6">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide5" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide6"><h6>Locations</h6></div>
+            <div class="col-sm-12 text-primary"><h4>Croagh Patrick<sup>4</sup></h4></div>
+            <div class="col-sm-12"><p>Croagh Patrick (Irish: Cruach Phádraig, meaning "(Saint) Patrick's Stack") and nicknamed the Reek, is a 764 m mountain and an important site of pilgrimage in Mayo, Ireland.</em></p></div>
+            <div class="col-sm-12"><p>On the last Sunday in July, thousands of pilgrims climb Croagh Patrick in honour of one of Irelands patron saints - Saint Patrick. Some pilgrims carry out 'rounding rituals', in which they pray while walking sunwise around features on the mountain. This activity is regarded by many as a continuation of the pagan Lughnasa festival, the start of the harvest season. St. Patrick's day is celebrated at the spring equinox.</p><p>The mountain may have held a pre-christian association with Crom Cruach, a pagan deity.</p></div>
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide7" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide7" class="col-12 fullheight defaulttext slide7">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide6" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide7"><h6>Developing the hypothesis</h6></div>
+            <div class="col-sm-12 text-primary"><h5>Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup></h5></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-muted"><h5>Step 1</h5></div>
+            <div class="col-sm-12"><h5>Establish potential</h5></div>
+            <div class="col-sm-12"><p>To establish if there is any potential for an equinox alignment between these sites we first calculate the <em>Just below horizon</em> equinox sunrise azimuth for Rathcroghan. We plot the azimuth as an orthodrome line overlain onto a spherical mercator projection of the earth. Or, more simply put, we plot the line towards the equinox sun as it rises on the horizon.</p></div>
+            <div class="col-sm-12"><p>This is very simply achieved using <a href="https://kerbstone52.ie/mace/mace.html" class="text-primary" target="_blank" title="Go to Mace"><i class="fas fa-link"></i>&nbsp;MACE</a>.</p><p>MACE <em>(a Map-based Archaeoastronomy Calculator and Explorer)</em> calculates and projects: Solar - Lunar, Rise - Set, Azimuths for Solstices, Cross Quarters, Equinoxs and Standstills, for any northern hemisphere location, and any time period.</p></div>
+            
+            
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide8" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            
+            <!-- Slide begin -->
+            <div id="slide8" class="col-12 fullheight defaulttext slide8">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide7" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide8"><h6>Developing the hypothesis</h6></div>
+            <div class="col-sm-12 text-primary"><h5>Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup></h5></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-muted"><h5>Step 2</h5></div>
+            <div class="col-sm-12"><h5>Determine site to site visibility</h5></div>
+            <div class="col-sm-12"><p>To confirm Corn Hill is visible from Rathcroghan mound we create what is termed a viewshed. A viewshed is the geographical area that is visible from a location. A viewshed is calculated using a Digital Elevation Model (DEM) of the earths surface. The colourised portion of the map represents those areas visible from Rathcroghan. The furthest visible point through 360° (the viewshed horizon) is indicated by the darker coloured line.</p><p>Viewshed calculation is a feature common to most GIS (geographic information system) software. The easiest and most accessible method of creating a viewshed is via the <a href="https://www.heywhatsthat.com" class="text-primary" target="_blank" title="Go to heywhatsthat"><i class="fas fa-link"></i>&nbsp;www.heywhatsthat.com</a> website.</p></div>
+            
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide9" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide9" class="col-12 fullheight defaulttext slide9">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide8" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide9"><h6>Developing the hypothesis</h6></div>
+            <div class="col-sm-12 text-primary"><h5>Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup></h5></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-muted"><h5>Step 3</h5></div>
+            <div class="col-sm-12"><h5>Assess Potential</h5></div>
+            <div class="col-sm-12"><p>To assess if there is any possibility for an alignment we can zoom to the Corn hill location and observe that Corn Hill is visible from Rathcroghan mound. We can also see that the projected equinox sunrise line crosses through Corn Hill. We can reasonably conclude that there is a distinct possibility of an alignment. </p></div>
+            
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide10" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide10" class="col-12 fullheight defaulttext slide10">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide9" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide10"><h6>Developing the hypothesis</h6></div>
+            <div class="col-sm-12 text-primary"><h5>Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup></h5></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-muted"><h5>Step 4</h5></div>
+            <div class="col-sm-12"><h5>Modelling</h5></div>
+            <div class="col-sm-12"><p>Again using data derived from a Digital Elevation Model (DEM) of the earths surface, we can create a valid horizon line for the Rathcroghan mound location. We accurately position Corn Hill on the horizon. A simulation is then created using the Stellarium planetarium programme.</p></div>
+            <div class="col-sm-12"><p>The computer model of the Rathcroghan equinox sunrise shows the very first rays of the sun become visible at the highest point on Corn Hill, i.e. the Carn Caille passage tomb.</p></div>
+            <div class="col-sm-12 text-center"><p><a href="#" class="btn btn-primary btn-round btn-block active" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/zqYF1B_Ur6s" aria-pressed="true"><i class="fab fa-youtube"></i>&nbsp;View Rathcroghan Equinox Simulation</a></p></div>
+            
+            
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide11" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide11" class="col-12 fullheight defaulttext slide11">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide10" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide11"><h6>Developing the hypothesis</h6></div>
+            <div class="col-sm-12 text-primary"><h5>Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup></h5></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-muted"><h5>Step 1</h5></div>
+            <div class="col-sm-12"><h5>Establish potential</h5></div>
+            <div class="col-sm-12"><p>To establish if there is any potential for an equinox alignment between these sites we first calculate the <em>Just below horizon</em> equinox sunset azimuth for Rathra. We plot the azimuth as an orthodrome line overlain onto a spherical mercator projection of the earth. Or, more simply put, we plot the line towards the equinox sun as it sets on the horizon.</p></div>
+            <div class="col-sm-12"><p>As detailed this is achieved using <a href="https://kerbstone52.ie/mace/mace.html" class="text-primary" target="_blank" title="Go to Mace"><i class="fas fa-link"></i>&nbsp;MACE</a>.</p><p>By simply entering the Latitude and Longitude of the location (in this example Rathra: Lat 53.756 Long -8.422) the azimuth is automatically calculated @ 271.27° and projected on a map.</p></div>
+            
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide12" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            
+            <!-- Slide begin -->
+            <div id="slide12" class="col-12 fullheight defaulttext slide12">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide11" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide12"><h6>Developing the hypothesis</h6></div>
+            <div class="col-sm-12 text-primary"><h5>Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup></h5></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-muted"><h5>Step 2</h5></div>
+            <div class="col-sm-12"><h5>Determine site to site visibility</h5></div>
+            <div class="col-sm-12"><p>To confirm Croagh Patrick is visible from Rathra we create what is termed a viewshed. A viewshed is the geographical area that is visible from a location. A viewshed is calculated using a Digital Elevation Model (DEM) of the earths surface. The colourised portion of the map represents those areas visible from Rathra. The furthest visible point through 360° (the viewshed horizon) is indicated by the darker coloured line.</p><p>The viewsheds used in this presentation have been created via the <a href="https://www.heywhatsthat.com" class="text-primary" target="_blank" title="Go to heywhatsthat"><i class="fas fa-link"></i>&nbsp;www.heywhatsthat.com</a> website using data derived from the USGS Shuttle Radar Topography Mission.</p></div>
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide13" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide13" class="col-12 fullheight defaulttext slide13">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide12" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide9 slide13"><h6>Developing the hypothesis</h6></div>
+            <div class="col-sm-12 text-primary"><h5>Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup></h5></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-muted"><h5>Step 3</h5></div>
+            <div class="col-sm-12"><h5>Assess Potential</h5></div>
+            <div class="col-sm-12"><p>To assess if there is any possibility for an alignment we zoom to the Croagh Patrick location and can observe that Croagh Patrick is visible from the Rathra ceremonial enclosure. We can also see that the projected equinox (just below horizon) sunset line is just to the right of Croagh Patrick. We can reasonably conclude that there is a distinct possibility of an alignment. </p></div>
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide14" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide14" class="col-12 fullheight defaulttext slide14">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center slide14"><a href="#slide13" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted"><h6>Developing the hypothesis</h6></div>
+            <div class="col-sm-12 text-primary"><h5>Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup></h5></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-muted"><h5>Step 4</h5></div>
+            <div class="col-sm-12"><h5>Modelling</h5></div>
+            <div class="col-sm-12"><p>Again using data derived from a Digital Elevation Model (DEM) of the earths surface, we can create a valid horizon line for the Rathra ceremonial enclosure location. We accurately position Croagh Patrick on the horizon. A simulation is then created using the Stellarium planetarium programme. The Stellarium horizons have been created from data derived from www.heywhatsthat.com using the <a href="https://github.com/briandoylegit/horiZONE" class="text-primary" target="_blank" title="Go to horiZONE"><i class="fas fa-link"></i>&nbsp;hoziZONE</a> tool.</p></div>
+            <div class="col-sm-12"><p>The computer model of the Rathra equinox sunset shows the sun descend into Croagh Patrick when viewed from Rathra.</p></div>
+            <div class="col-sm-12 text-center"><p><a href="#" class="btn btn-primary btn-round btn-block active" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/dY0k1Ddzv9w" aria-pressed="true"><i class="fab fa-youtube"></i>&nbsp;View Rathra Equinox Simulation</a></p></div>
+            
+                        
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide15" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide15" class="col-12 fullheight defaulttext">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide14" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted"><h6>Ground Truthing the hypothesis</h6></div>
+            <div class="col-sm-12" style="height:15px;"></div>
+            <div class="col-sm-12 text-primary"><h5>Rathra<sup>3</sup> - Croagh Patrick<sup>4</sup></h5></div>
+            <div class="col-sm-12"><p>During the process of preparing this presentation I became aware that the Rathra - Croagh Patrick equinox alignment has already been observed and this element of the hypothesis has been demonstrated to be correct. The images are reproduced courtesy of Con Connor and were captured from Rathra at the autumn equinox 2013. </p></div>
+            <div class="col-sm-12 text-center"><p><button id="Rathra-images" type="button" class="btn btn-primary btn-round btn-block" data-toggle="modal" data-target="#RathraImages">View Rathra Equinox Images</button></p></div>
+            <div class="col-sm-12 text-primary"><h5>Rathcroghan<sup>1</sup> - Corn Hill<sup>2</sup></h5></div>
+            <div class="col-sm-12"><p>The next available opportunity to capture equivalent images of the Rathcroghan equinox sunrise will be on Monday 23rd September 2019. Hopefully the conditions will be suitable.</p></div>
+            <div class="col-sm-12 text-center"><p><a href="#" class="btn btn-primary btn-round btn-block" data-toggle="modal" data-target=".bs-example-modal-lg">Coming soon..Rathcroghan</a></p></div>
+            
+            <!-- Slide nav down -->
+            <div class="col-sm-12 text-center"><a href="#slide16" <i class="fas fa-angle-down" style="font-size:36px"></i></a></div>   
+                
+            
+            </div>
+            <!-- Slide end -->
+
+
+            <!-- Slide begin -->
+            <div id="slide16" class="col-12 fullheight defaulttext slide16">
+            
+            <!-- Slide nav up -->    
+            <div class="col-sm-12 text-center"><a href="#slide15" <i class="fas fa-angle-up" style="font-size:36px"></i></a></div>
+                
+            <!-- Slide content -->
+            <div class="col-sm-12 text-muted slide16"><h6>Created by: Brian Doyle 2019</h6></div>
+            <div class="col-sm-12 text-primary"><h5>With Thanks to:</h5></div>
+            <div class="col-sm-12"><p><ul style="list-style: none;">
+            <li><i class="fas fa-thumbs-up"></i>&nbsp;Victor Reijs - www.archaeocosmology.org</li>
+            <li><i class="fas fa-thumbs-up"></i>&nbsp;Chris Veness - www.movable-type.co.uk </li>
+            <li><i class="fas fa-thumbs-up"></i>&nbsp;Vladimir Agafonkin - https://agafonkin.com</li>
+            <li><i class="fas fa-thumbs-up"></i>&nbsp;Michael Kosowsky - www.heywhatsthat.com</li>
+            <li><i class="fas fa-thumbs-up"></i>&nbsp;Georg Zotti - Stellarium</li>
+            <li><i class="fas fa-thumbs-up"></i>&nbsp;Con Connor - Equinox Images</li>    
+            </ul></p></div>
+            <div class="col-sm-12"><p>Should any of the ideas presented here prove to be correct, this has been made possible through the resources, tools and software that have been made freely available by others, and most particularly those listed above.</p></div>
+            <div class="col-sm-12"><p>Any misconceptions or errors are entirely my own.</p></div>
+            <div class="col-sm-12 text-primary"><h5>License:</h5></div>
+            <div class="col-sm-12"><p>This presentation is issued with an MIT license. A copy of the license plus all materials used to create the presentation is available @</p>
+            <p><a href="https://github.com/briandoylegit/cruachanequinox" class="text-primary" target="_blank" title="Go to github"><i class="fab fa-github"></i>&nbsp;https://github.com/briandoylegit/cruachanequinox</a></p>
+            <p><a href="mailto: briandoyle.kerbstone52@gmail.com" class="text-primary" target="_blank" title="Go to github"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;briandoyle.kerbstone52@gmail.com</a></p></div>
+            
+                
+            
+            </div>
+            <!-- Slide end -->
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        </div>
+
+
+
+
+
+<!-- Youtube Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark border-dark">
+          <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body bg-dark p-0">
+          <!-- BS4 Responsive Embed -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Youtube Modal -->
+
+<!-- Rathra Images Modal -->
+<div class="modal fade" id="RathraImages" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+   <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+     <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+     <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+     <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+     <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+     <div class="carousel-item active">
+      <img class="d-block w-100" src="assets/img/rathra1.jpg" alt="First slide">
+         <div class="carousel-caption">
+        Image 1. Rathra equinox sun sets into Croagh Patrick, Autumn 2013. Photograph by Con Connor© 
+      </div>
+     </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/rathra2.jpg" alt="Second slide">
+         <div class="carousel-caption">
+        Image 2. Rathra equinox sun sets into Croagh Patrick, Autumn 2013. Photograph by Con Connor© 
+      </div>
+     </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/rathra3.jpg" alt="Third slide">
+         <div class="carousel-caption">
+        Image 3. Rathra equinox sun sets into Croagh Patrick, Autumn 2013. Photograph by Con Connor© 
+      </div>
+     </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/rathra4.jpg" alt="Third slide">
+         <div class="carousel-caption">
+        Image 4. Rathra equinox sun sets into Croagh Patrick, Autumn 2013. Photograph by Con Connor© 
+      </div>
+     </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+    </a>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- Rathra Images Modal -->
+
+
+    </main><!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <!-- Additional JavaScript
+    ================================================== -->
+    
+    <script src="js/leaflet-bing-layer.js"></script>
+    <script src="js/Leaflet.Geodesic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/smartwizard@4.3.1,npm/file-saver@2.0.2,npm/leaflet-filelayer@1.2.0,npm/leaflet-extra-markers@1.1.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+  // Set iframe attributes when the show instance method is called
+  $("#videoModal").on("show.bs.modal", function(event) {
+    let button = $(event.relatedTarget); // Button that triggered the modal
+    let url = button.data("video");      // Extract url from data-video attribute
+
+    $(this).find("iframe").attr({
+        src: url,
+        allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    });
+  });
+
+  // Remove iframe attributes when the modal has finished being hidden from the user
+  $("#videoModal").on("hidden.bs.modal", function() {
+    $("#videoModal iframe").removeAttr("src allow");
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+        
+        
+        /* Rathcroghan Visibility Cloak Horizon Images Overlay*/
+
+/* 51 */
+var RathcroghanimageUrlN51W004 = './assets/img/Rathcroghan/cloakpN51W004.png',
+      RathcroghanimageBoundsN51W004 = [[51, -4], [52, -3]];
+      var RathcroghanimagegroupN51W004 = L.imageOverlay(RathcroghanimageUrlN51W004, RathcroghanimageBoundsN51W004, {opacity: 0.25});
+
+var RathcroghanimageUrlN51W005 = './assets/img/Rathcroghan/cloakpN51W005.png',
+      RathcroghanimageBoundsN51W005 = [[51, -5], [52, -4]];
+      var RathcroghanimagegroupN51W005 = L.imageOverlay(RathcroghanimageUrlN51W005, RathcroghanimageBoundsN51W005, {opacity: 0.25});
+
+var RathcroghanimageUrlN51W006 = './assets/img/Rathcroghan/cloakpN51W006.png',
+      RathcroghanimageBoundsN51W006 = [[51, -6], [52, -5]];
+      var RathcroghanimagegroupN51W006 = L.imageOverlay(RathcroghanimageUrlN51W006, RathcroghanimageBoundsN51W006, {opacity: 0.25});
+
+var RathcroghanimageUrlN51W007 = './assets/img/Rathcroghan/cloakpN51W007.png',
+      RathcroghanimageBoundsN51W007 = [[51, -7], [52, -6]];
+      var RathcroghanimagegroupN51W007 = L.imageOverlay(RathcroghanimageUrlN51W007, RathcroghanimageBoundsN51W007, {opacity: 0.25});
+
+var RathcroghanimageUrlN51W008 = './assets/img/Rathcroghan/cloakpN51W008.png',
+      RathcroghanimageBoundsN51W008 = [[51, -8], [52, -7]];
+      var RathcroghanimagegroupN51W008 = L.imageOverlay(RathcroghanimageUrlN51W008, RathcroghanimageBoundsN51W008, {opacity: 0.25});
+
+var RathcroghanimageUrlN51W009 = './assets/img/Rathcroghan/cloakpN51W009.png',
+      RathcroghanimageBoundsN51W009 = [[51, -9], [52, -8]];
+      var RathcroghanimagegroupN51W009 = L.imageOverlay(RathcroghanimageUrlN51W009, RathcroghanimageBoundsN51W009, {opacity: 0.25});
+
+var RathcroghanimageUrlN51W010 = './assets/img/Rathcroghan/cloakpN51W010.png',
+      RathcroghanimageBoundsN51W010 = [[51, -10], [52, -9]];
+      var RathcroghanimagegroupN51W010 = L.imageOverlay(RathcroghanimageUrlN51W010, RathcroghanimageBoundsN51W010, {opacity: 0.25});	  
+	  
+var RathcroghanimageUrlN51W011 = './assets/img/Rathcroghan/cloakpN51W011.png',
+      RathcroghanimageBoundsN51W011 = [[51, -11], [52, -10]];
+      var RathcroghanimagegroupN51W011 = L.imageOverlay(RathcroghanimageUrlN51W011, RathcroghanimageBoundsN51W011, {opacity: 0.25});
+
+
+/* 52 */
+var RathcroghanimageUrlN52W004 = './assets/img/Rathcroghan/cloakpN52W004.png',
+      RathcroghanimageBoundsN52W004 = [[52, -4], [53, -3]];
+      var RathcroghanimagegroupN52W004 = L.imageOverlay(RathcroghanimageUrlN52W004, RathcroghanimageBoundsN52W004, {opacity: 0.25});
+
+var RathcroghanimageUrlN52W005 = './assets/img/Rathcroghan/cloakpN52W005.png',
+      RathcroghanimageBoundsN52W005 = [[52, -5], [53, -4]];
+      var RathcroghanimagegroupN52W005 = L.imageOverlay(RathcroghanimageUrlN52W005, RathcroghanimageBoundsN52W005, {opacity: 0.25});
+
+var RathcroghanimageUrlN52W006 = './assets/img/Rathcroghan/cloakpN52W006.png',
+      RathcroghanimageBoundsN52W006 = [[52, -6], [53, -5]];
+      var RathcroghanimagegroupN52W006 = L.imageOverlay(RathcroghanimageUrlN52W006, RathcroghanimageBoundsN52W006, {opacity: 0.25});
+
+var RathcroghanimageUrlN52W007 = './assets/img/Rathcroghan/cloakpN52W007.png',
+      RathcroghanimageBoundsN52W007 = [[52, -7], [53, -6]];
+      var RathcroghanimagegroupN52W007 = L.imageOverlay(RathcroghanimageUrlN52W007, RathcroghanimageBoundsN52W007, {opacity: 0.25});
+
+var RathcroghanimageUrlN52W008 = './assets/img/Rathcroghan/cloakpN52W008.png',
+      RathcroghanimageBoundsN52W008 = [[52, -8], [53, -7]];
+      var RathcroghanimagegroupN52W008 = L.imageOverlay(RathcroghanimageUrlN52W008, RathcroghanimageBoundsN52W008, {opacity: 0.25});
+
+var RathcroghanimageUrlN52W009 = './assets/img/Rathcroghan/cloakpN52W009.png',
+      RathcroghanimageBoundsN52W009 = [[52, -9], [53, -8]];
+      var RathcroghanimagegroupN52W009 = L.imageOverlay(RathcroghanimageUrlN52W009, RathcroghanimageBoundsN52W009, {opacity: 0.25});
+
+var RathcroghanimageUrlN52W010 = './assets/img/Rathcroghan/cloakpN52W010.png',
+      RathcroghanimageBoundsN52W010 = [[52, -10], [53, -9]];
+      var RathcroghanimagegroupN52W010 = L.imageOverlay(RathcroghanimageUrlN52W010, RathcroghanimageBoundsN52W010, {opacity: 0.25});	  
+	  
+var RathcroghanimageUrlN52W011 = './assets/img/Rathcroghan/cloakpN52W011.png',
+      RathcroghanimageBoundsN52W011 = [[52, -11], [53, -10]];
+      var RathcroghanimagegroupN52W011 = L.imageOverlay(RathcroghanimageUrlN52W011, RathcroghanimageBoundsN52W011, {opacity: 0.25});	  
+	  
+	  
+	  
+/* 53 */
+var RathcroghanimageUrlN53W004 = './assets/img/Rathcroghan/cloakpN53W004.png',
+      RathcroghanimageBoundsN53W004 = [[53, -4], [54, -3]];
+      var RathcroghanimagegroupN53W004 = L.imageOverlay(RathcroghanimageUrlN53W004, RathcroghanimageBoundsN53W004, {opacity: 0.25});
+
+var RathcroghanimageUrlN53W005 = './assets/img/Rathcroghan/cloakpN53W005.png',
+      RathcroghanimageBoundsN53W005 = [[53, -5], [54, -4]];
+      var RathcroghanimagegroupN53W005 = L.imageOverlay(RathcroghanimageUrlN53W005, RathcroghanimageBoundsN53W005, {opacity: 0.25});
+
+var RathcroghanimageUrlN53W006 = './assets/img/Rathcroghan/cloakpN53W006.png',
+      RathcroghanimageBoundsN53W006 = [[53, -6], [54, -5]];
+      var RathcroghanimagegroupN53W006 = L.imageOverlay(RathcroghanimageUrlN53W006, RathcroghanimageBoundsN53W006, {opacity: 0.25});
+
+var RathcroghanimageUrlN53W007 = './assets/img/Rathcroghan/cloakpN53W007.png',
+      RathcroghanimageBoundsN53W007 = [[53, -7], [54, -6]];
+      var RathcroghanimagegroupN53W007 = L.imageOverlay(RathcroghanimageUrlN53W007, RathcroghanimageBoundsN53W007, {opacity: 0.25});
+
+var RathcroghanimageUrlN53W008 = './assets/img/Rathcroghan/cloakpN53W008.png',
+      RathcroghanimageBoundsN53W008 = [[53, -8], [54, -7]];
+      var RathcroghanimagegroupN53W008 = L.imageOverlay(RathcroghanimageUrlN53W008, RathcroghanimageBoundsN53W008, {opacity: 0.25});
+
+var RathcroghanimageUrlN53W009 = './assets/img/Rathcroghan/cloakpN53W009.png',
+      RathcroghanimageBoundsN53W009 = [[53, -9], [54, -8]];
+      var RathcroghanimagegroupN53W009 = L.imageOverlay(RathcroghanimageUrlN53W009, RathcroghanimageBoundsN53W009, {opacity: 0.25});
+
+var RathcroghanimageUrlN53W010 = './assets/img/Rathcroghan/cloakpN53W010.png',
+      RathcroghanimageBoundsN53W010 = [[53, -10], [54, -9]];
+      var RathcroghanimagegroupN53W010 = L.imageOverlay(RathcroghanimageUrlN53W010, RathcroghanimageBoundsN53W010, {opacity: 0.25});	  
+	  
+var RathcroghanimageUrlN53W011 = './assets/img/Rathcroghan/cloakpN53W011.png',
+      RathcroghanimageBoundsN53W011 = [[53, -11], [54, -10]];
+      var RathcroghanimagegroupN53W011 = L.imageOverlay(RathcroghanimageUrlN53W011, RathcroghanimageBoundsN53W011, {opacity: 0.25});
+	  
+	  
+
+/* 54 */
+var RathcroghanimageUrlN54W004 = './assets/img/Rathcroghan/cloakpN54W004.png',
+      RathcroghanimageBoundsN54W004 = [[54, -4], [55, -3]];
+      var RathcroghanimagegroupN54W004 = L.imageOverlay(RathcroghanimageUrlN54W004, RathcroghanimageBoundsN54W004, {opacity: 0.25});
+
+var RathcroghanimageUrlN54W005 = './assets/img/Rathcroghan/cloakpN54W005.png',
+      RathcroghanimageBoundsN54W005 = [[54, -5], [55, -4]];
+      var RathcroghanimagegroupN54W005 = L.imageOverlay(RathcroghanimageUrlN54W005, RathcroghanimageBoundsN54W005, {opacity: 0.25});
+
+var RathcroghanimageUrlN54W006 = './assets/img/Rathcroghan/cloakpN54W006.png',
+      RathcroghanimageBoundsN54W006 = [[54, -6], [55, -5]];
+      var RathcroghanimagegroupN54W006 = L.imageOverlay(RathcroghanimageUrlN54W006, RathcroghanimageBoundsN54W006, {opacity: 0.25});
+
+var RathcroghanimageUrlN54W007 = './assets/img/Rathcroghan/cloakpN54W007.png',
+      RathcroghanimageBoundsN54W007 = [[54, -7], [55, -6]];
+      var RathcroghanimagegroupN54W007 = L.imageOverlay(RathcroghanimageUrlN54W007, RathcroghanimageBoundsN54W007, {opacity: 0.25});
+
+var RathcroghanimageUrlN54W008 = './assets/img/Rathcroghan/cloakpN54W008.png',
+      RathcroghanimageBoundsN54W008 = [[54, -8], [55, -7]];
+      var RathcroghanimagegroupN54W008 = L.imageOverlay(RathcroghanimageUrlN54W008, RathcroghanimageBoundsN54W008, {opacity: 0.25});
+
+var RathcroghanimageUrlN54W009 = './assets/img/Rathcroghan/cloakpN54W009.png',
+      RathcroghanimageBoundsN54W009 = [[54, -9], [55, -8]];
+      var RathcroghanimagegroupN54W009 = L.imageOverlay(RathcroghanimageUrlN54W009, RathcroghanimageBoundsN54W009, {opacity: 0.25});
+
+var RathcroghanimageUrlN54W010 = './assets/img/Rathcroghan/cloakpN54W010.png',
+      RathcroghanimageBoundsN54W010 = [[54, -10], [55, -9]];
+      var RathcroghanimagegroupN54W010 = L.imageOverlay(RathcroghanimageUrlN54W010, RathcroghanimageBoundsN54W010, {opacity: 0.25});	  
+	  
+var RathcroghanimageUrlN54W011 = './assets/img/Rathcroghan/cloakpN54W011.png',
+      RathcroghanimageBoundsN54W011 = [[54, -11], [55, -10]];
+      var RathcroghanimagegroupN54W011 = L.imageOverlay(RathcroghanimageUrlN54W011, RathcroghanimageBoundsN54W011, {opacity: 0.25});
+	  
+
+/* 55 */
+var RathcroghanimageUrlN55W004 = './assets/img/Rathcroghan/cloakpN55W004.png',
+      RathcroghanimageBoundsN55W004 = [[55, -4], [56, -3]];
+      var RathcroghanimagegroupN55W004 = L.imageOverlay(RathcroghanimageUrlN55W004, RathcroghanimageBoundsN55W004, {opacity: 0.25});
+
+var RathcroghanimageUrlN55W005 = './assets/img/Rathcroghan/cloakpN55W005.png',
+      RathcroghanimageBoundsN55W005 = [[55, -5], [56, -4]];
+      var RathcroghanimagegroupN55W005 = L.imageOverlay(RathcroghanimageUrlN55W005, RathcroghanimageBoundsN55W005, {opacity: 0.25});
+
+var RathcroghanimageUrlN55W006 = './assets/img/Rathcroghan/cloakpN55W006.png',
+      RathcroghanimageBoundsN55W006 = [[55, -6], [56, -5]];
+      var RathcroghanimagegroupN55W006 = L.imageOverlay(RathcroghanimageUrlN55W006, RathcroghanimageBoundsN55W006, {opacity: 0.25});
+
+var RathcroghanimageUrlN55W007 = './assets/img/Rathcroghan/cloakpN55W007.png',
+      RathcroghanimageBoundsN55W007 = [[55, -7], [56, -6]];
+      var RathcroghanimagegroupN55W007 = L.imageOverlay(RathcroghanimageUrlN55W007, RathcroghanimageBoundsN55W007, {opacity: 0.25});
+
+var RathcroghanimageUrlN55W008 = './assets/img/Rathcroghan/cloakpN55W008.png',
+      RathcroghanimageBoundsN55W008 = [[55, -8], [56, -7]];
+      var RathcroghanimagegroupN55W008 = L.imageOverlay(RathcroghanimageUrlN55W008, RathcroghanimageBoundsN55W008, {opacity: 0.25});
+
+var RathcroghanimageUrlN55W009 = './assets/img/Rathcroghan/cloakpN55W009.png',
+      RathcroghanimageBoundsN55W009 = [[55, -9], [56, -8]];
+      var RathcroghanimagegroupN55W009 = L.imageOverlay(RathcroghanimageUrlN55W009, RathcroghanimageBoundsN55W009, {opacity: 0.25});
+
+var RathcroghanimageUrlN55W010 = './assets/img/Rathcroghan/cloakpN55W010.png',
+      RathcroghanimageBoundsN55W010 = [[55, -10], [56, -9]];
+      var RathcroghanimagegroupN55W010 = L.imageOverlay(RathcroghanimageUrlN55W010, RathcroghanimageBoundsN55W010, {opacity: 0.25});	  
+	  
+var RathcroghanimageUrlN55W011 = './assets/img/Rathcroghan/cloakpN55W011.png',
+      RathcroghanimageBoundsN55W011 = [[55, -11], [56, -10]];
+      var RathcroghanimagegroupN55W011 = L.imageOverlay(RathcroghanimageUrlN55W011, RathcroghanimageBoundsN55W011, {opacity: 0.25});	  
+
+
+var Rathcroghanvch = L.layerGroup([RathcroghanimagegroupN51W004, RathcroghanimagegroupN51W005, RathcroghanimagegroupN51W006, RathcroghanimagegroupN51W007, RathcroghanimagegroupN51W008, RathcroghanimagegroupN51W009, RathcroghanimagegroupN51W010, RathcroghanimagegroupN51W011, RathcroghanimagegroupN52W004, RathcroghanimagegroupN52W005,  RathcroghanimagegroupN52W006, RathcroghanimagegroupN52W007, RathcroghanimagegroupN52W008, RathcroghanimagegroupN52W009, RathcroghanimagegroupN52W010, RathcroghanimagegroupN52W011, RathcroghanimagegroupN53W004, RathcroghanimagegroupN53W005, RathcroghanimagegroupN53W006, RathcroghanimagegroupN53W007, RathcroghanimagegroupN53W008, RathcroghanimagegroupN53W009, RathcroghanimagegroupN53W010, RathcroghanimagegroupN53W011, RathcroghanimagegroupN54W004, RathcroghanimagegroupN54W005, RathcroghanimagegroupN54W006, RathcroghanimagegroupN54W007, RathcroghanimagegroupN54W008, RathcroghanimagegroupN54W009, RathcroghanimagegroupN54W010, RathcroghanimagegroupN54W011, RathcroghanimagegroupN55W004, RathcroghanimagegroupN55W005, RathcroghanimagegroupN55W006, RathcroghanimagegroupN55W007, RathcroghanimagegroupN55W008, RathcroghanimagegroupN55W009, RathcroghanimagegroupN55W010, RathcroghanimagegroupN55W011]);
+
+
+/* Rathra Visibility Cloak Horizon and Images */
+
+/* 51 */
+var rathraimageUrlN51W004 = './assets/img/rathra/cloakpN51W004.png',
+      rathraimageBoundsN51W004 = [[51, -4], [52, -3]];
+      var rathraimagegroupN51W004 = L.imageOverlay(rathraimageUrlN51W004, rathraimageBoundsN51W004, {opacity: 0.25});
+
+var rathraimageUrlN51W005 = './assets/img/rathra/cloakpN51W005.png',
+      rathraimageBoundsN51W005 = [[51, -5], [52, -4]];
+      var rathraimagegroupN51W005 = L.imageOverlay(rathraimageUrlN51W005, rathraimageBoundsN51W005, {opacity: 0.25});
+
+var rathraimageUrlN51W006 = './assets/img/rathra/cloakpN51W006.png',
+      rathraimageBoundsN51W006 = [[51, -6], [52, -5]];
+      var rathraimagegroupN51W006 = L.imageOverlay(rathraimageUrlN51W006, rathraimageBoundsN51W006, {opacity: 0.25});
+
+var rathraimageUrlN51W007 = './assets/img/rathra/cloakpN51W007.png',
+      rathraimageBoundsN51W007 = [[51, -7], [52, -6]];
+      var rathraimagegroupN51W007 = L.imageOverlay(rathraimageUrlN51W007, rathraimageBoundsN51W007, {opacity: 0.25});
+
+var rathraimageUrlN51W008 = './assets/img/rathra/cloakpN51W008.png',
+      rathraimageBoundsN51W008 = [[51, -8], [52, -7]];
+      var rathraimagegroupN51W008 = L.imageOverlay(rathraimageUrlN51W008, rathraimageBoundsN51W008, {opacity: 0.25});
+
+var rathraimageUrlN51W009 = './assets/img/rathra/cloakpN51W009.png',
+      rathraimageBoundsN51W009 = [[51, -9], [52, -8]];
+      var rathraimagegroupN51W009 = L.imageOverlay(rathraimageUrlN51W009, rathraimageBoundsN51W009, {opacity: 0.25});
+
+var rathraimageUrlN51W010 = './assets/img/rathra/cloakpN51W010.png',
+      rathraimageBoundsN51W010 = [[51, -10], [52, -9]];
+      var rathraimagegroupN51W010 = L.imageOverlay(rathraimageUrlN51W010, rathraimageBoundsN51W010, {opacity: 0.25});	  
+	  
+var rathraimageUrlN51W011 = './assets/img/rathra/cloakpN51W011.png',
+      rathraimageBoundsN51W011 = [[51, -11], [52, -10]];
+      var rathraimagegroupN51W011 = L.imageOverlay(rathraimageUrlN51W011, rathraimageBoundsN51W011, {opacity: 0.25});
+
+
+/* 52 */
+var rathraimageUrlN52W004 = './assets/img/rathra/cloakpN52W004.png',
+      rathraimageBoundsN52W004 = [[52, -4], [53, -3]];
+      var rathraimagegroupN52W004 = L.imageOverlay(rathraimageUrlN52W004, rathraimageBoundsN52W004, {opacity: 0.25});
+
+var rathraimageUrlN52W005 = './assets/img/rathra/cloakpN52W005.png',
+      rathraimageBoundsN52W005 = [[52, -5], [53, -4]];
+      var rathraimagegroupN52W005 = L.imageOverlay(rathraimageUrlN52W005, rathraimageBoundsN52W005, {opacity: 0.25});
+
+var rathraimageUrlN52W006 = './assets/img/rathra/cloakpN52W006.png',
+      rathraimageBoundsN52W006 = [[52, -6], [53, -5]];
+      var rathraimagegroupN52W006 = L.imageOverlay(rathraimageUrlN52W006, rathraimageBoundsN52W006, {opacity: 0.25});
+
+var rathraimageUrlN52W007 = './assets/img/rathra/cloakpN52W007.png',
+      rathraimageBoundsN52W007 = [[52, -7], [53, -6]];
+      var rathraimagegroupN52W007 = L.imageOverlay(rathraimageUrlN52W007, rathraimageBoundsN52W007, {opacity: 0.25});
+
+var rathraimageUrlN52W008 = './assets/img/rathra/cloakpN52W008.png',
+      rathraimageBoundsN52W008 = [[52, -8], [53, -7]];
+      var rathraimagegroupN52W008 = L.imageOverlay(rathraimageUrlN52W008, rathraimageBoundsN52W008, {opacity: 0.25});
+
+var rathraimageUrlN52W009 = './assets/img/rathra/cloakpN52W009.png',
+      rathraimageBoundsN52W009 = [[52, -9], [53, -8]];
+      var rathraimagegroupN52W009 = L.imageOverlay(rathraimageUrlN52W009, rathraimageBoundsN52W009, {opacity: 0.25});
+
+var rathraimageUrlN52W010 = './assets/img/rathra/cloakpN52W010.png',
+      rathraimageBoundsN52W010 = [[52, -10], [53, -9]];
+      var rathraimagegroupN52W010 = L.imageOverlay(rathraimageUrlN52W010, rathraimageBoundsN52W010, {opacity: 0.25});	  
+	  
+var rathraimageUrlN52W011 = './assets/img/rathra/cloakpN52W011.png',
+      rathraimageBoundsN52W011 = [[52, -11], [53, -10]];
+      var rathraimagegroupN52W011 = L.imageOverlay(rathraimageUrlN52W011, rathraimageBoundsN52W011, {opacity: 0.25});	  
+	  
+	  
+	  
+/* 53 */
+var rathraimageUrlN53W004 = './assets/img/rathra/cloakpN53W004.png',
+      rathraimageBoundsN53W004 = [[53, -4], [54, -3]];
+      var rathraimagegroupN53W004 = L.imageOverlay(rathraimageUrlN53W004, rathraimageBoundsN53W004, {opacity: 0.25});
+
+var rathraimageUrlN53W005 = './assets/img/rathra/cloakpN53W005.png',
+      rathraimageBoundsN53W005 = [[53, -5], [54, -4]];
+      var rathraimagegroupN53W005 = L.imageOverlay(rathraimageUrlN53W005, rathraimageBoundsN53W005, {opacity: 0.25});
+
+var rathraimageUrlN53W006 = './assets/img/rathra/cloakpN53W006.png',
+      rathraimageBoundsN53W006 = [[53, -6], [54, -5]];
+      var rathraimagegroupN53W006 = L.imageOverlay(rathraimageUrlN53W006, rathraimageBoundsN53W006, {opacity: 0.25});
+
+var rathraimageUrlN53W007 = './assets/img/rathra/cloakpN53W007.png',
+      rathraimageBoundsN53W007 = [[53, -7], [54, -6]];
+      var rathraimagegroupN53W007 = L.imageOverlay(rathraimageUrlN53W007, rathraimageBoundsN53W007, {opacity: 0.25});
+
+var rathraimageUrlN53W008 = './assets/img/rathra/cloakpN53W008.png',
+      rathraimageBoundsN53W008 = [[53, -8], [54, -7]];
+      var rathraimagegroupN53W008 = L.imageOverlay(rathraimageUrlN53W008, rathraimageBoundsN53W008, {opacity: 0.25});
+
+var rathraimageUrlN53W009 = './assets/img/rathra/cloakpN53W009.png',
+      rathraimageBoundsN53W009 = [[53, -9], [54, -8]];
+      var rathraimagegroupN53W009 = L.imageOverlay(rathraimageUrlN53W009, rathraimageBoundsN53W009, {opacity: 0.25});
+
+var rathraimageUrlN53W010 = './assets/img/rathra/cloakpN53W010.png',
+      rathraimageBoundsN53W010 = [[53, -10], [54, -9]];
+      var rathraimagegroupN53W010 = L.imageOverlay(rathraimageUrlN53W010, rathraimageBoundsN53W010, {opacity: 0.25});	  
+	  
+var rathraimageUrlN53W011 = './assets/img/rathra/cloakpN53W011.png',
+      rathraimageBoundsN53W011 = [[53, -11], [54, -10]];
+      var rathraimagegroupN53W011 = L.imageOverlay(rathraimageUrlN53W011, rathraimageBoundsN53W011, {opacity: 0.25});
+	  
+	  
+
+/* 54 */
+var rathraimageUrlN54W004 = './assets/img/rathra/cloakpN54W004.png',
+      rathraimageBoundsN54W004 = [[54, -4], [55, -3]];
+      var rathraimagegroupN54W004 = L.imageOverlay(rathraimageUrlN54W004, rathraimageBoundsN54W004, {opacity: 0.25});
+
+var rathraimageUrlN54W005 = './assets/img/rathra/cloakpN54W005.png',
+      rathraimageBoundsN54W005 = [[54, -5], [55, -4]];
+      var rathraimagegroupN54W005 = L.imageOverlay(rathraimageUrlN54W005, rathraimageBoundsN54W005, {opacity: 0.25});
+
+var rathraimageUrlN54W006 = './assets/img/rathra/cloakpN54W006.png',
+      rathraimageBoundsN54W006 = [[54, -6], [55, -5]];
+      var rathraimagegroupN54W006 = L.imageOverlay(rathraimageUrlN54W006, rathraimageBoundsN54W006, {opacity: 0.25});
+
+var rathraimageUrlN54W007 = './assets/img/rathra/cloakpN54W007.png',
+      rathraimageBoundsN54W007 = [[54, -7], [55, -6]];
+      var rathraimagegroupN54W007 = L.imageOverlay(rathraimageUrlN54W007, rathraimageBoundsN54W007, {opacity: 0.25});
+
+var rathraimageUrlN54W008 = './assets/img/rathra/cloakpN54W008.png',
+      rathraimageBoundsN54W008 = [[54, -8], [55, -7]];
+      var rathraimagegroupN54W008 = L.imageOverlay(rathraimageUrlN54W008, rathraimageBoundsN54W008, {opacity: 0.25});
+
+var rathraimageUrlN54W009 = './assets/img/rathra/cloakpN54W009.png',
+      rathraimageBoundsN54W009 = [[54, -9], [55, -8]];
+      var rathraimagegroupN54W009 = L.imageOverlay(rathraimageUrlN54W009, rathraimageBoundsN54W009, {opacity: 0.25});
+
+var rathraimageUrlN54W010 = './assets/img/rathra/cloakpN54W010.png',
+      rathraimageBoundsN54W010 = [[54, -10], [55, -9]];
+      var rathraimagegroupN54W010 = L.imageOverlay(rathraimageUrlN54W010, rathraimageBoundsN54W010, {opacity: 0.25});	  
+	  
+var rathraimageUrlN54W011 = './assets/img/rathra/cloakpN54W011.png',
+      rathraimageBoundsN54W011 = [[54, -11], [55, -10]];
+      var rathraimagegroupN54W011 = L.imageOverlay(rathraimageUrlN54W011, rathraimageBoundsN54W011, {opacity: 0.25});
+	  
+
+/* 55 */
+var rathraimageUrlN55W004 = './assets/img/rathra/cloakpN55W004.png',
+      rathraimageBoundsN55W004 = [[55, -4], [56, -3]];
+      var rathraimagegroupN55W004 = L.imageOverlay(rathraimageUrlN55W004, rathraimageBoundsN55W004, {opacity: 0.25});
+
+var rathraimageUrlN55W005 = './assets/img/rathra/cloakpN55W005.png',
+      rathraimageBoundsN55W005 = [[55, -5], [56, -4]];
+      var rathraimagegroupN55W005 = L.imageOverlay(rathraimageUrlN55W005, rathraimageBoundsN55W005, {opacity: 0.25});
+
+var rathraimageUrlN55W006 = './assets/img/rathra/cloakpN55W006.png',
+      rathraimageBoundsN55W006 = [[55, -6], [56, -5]];
+      var rathraimagegroupN55W006 = L.imageOverlay(rathraimageUrlN55W006, rathraimageBoundsN55W006, {opacity: 0.25});
+
+var rathraimageUrlN55W007 = './assets/img/rathra/cloakpN55W007.png',
+      rathraimageBoundsN55W007 = [[55, -7], [56, -6]];
+      var rathraimagegroupN55W007 = L.imageOverlay(rathraimageUrlN55W007, rathraimageBoundsN55W007, {opacity: 0.25});
+
+var rathraimageUrlN55W008 = './assets/img/rathra/cloakpN55W008.png',
+      rathraimageBoundsN55W008 = [[55, -8], [56, -7]];
+      var rathraimagegroupN55W008 = L.imageOverlay(rathraimageUrlN55W008, rathraimageBoundsN55W008, {opacity: 0.25});
+
+var rathraimageUrlN55W009 = './assets/img/rathra/cloakpN55W009.png',
+      rathraimageBoundsN55W009 = [[55, -9], [56, -8]];
+      var rathraimagegroupN55W009 = L.imageOverlay(rathraimageUrlN55W009, rathraimageBoundsN55W009, {opacity: 0.25});
+
+var rathraimageUrlN55W010 = './assets/img/rathra/cloakpN55W010.png',
+      rathraimageBoundsN55W010 = [[55, -10], [56, -9]];
+      var rathraimagegroupN55W010 = L.imageOverlay(rathraimageUrlN55W010, rathraimageBoundsN55W010, {opacity: 0.25});	  
+	  
+var rathraimageUrlN55W011 = './assets/img/rathra/cloakpN55W011.png',
+      rathraimageBoundsN55W011 = [[55, -11], [56, -10]];
+      var rathraimagegroupN55W011 = L.imageOverlay(rathraimageUrlN55W011, rathraimageBoundsN55W011, {opacity: 0.25});	  
+
+
+var rathravch = L.layerGroup([rathraimagegroupN51W004, rathraimagegroupN51W005, rathraimagegroupN51W006, rathraimagegroupN51W007, rathraimagegroupN51W008, rathraimagegroupN51W009, rathraimagegroupN51W010, rathraimagegroupN51W011, rathraimagegroupN52W004, rathraimagegroupN52W005,  rathraimagegroupN52W006, rathraimagegroupN52W007, rathraimagegroupN52W008, rathraimagegroupN52W009, rathraimagegroupN52W010, rathraimagegroupN52W011, rathraimagegroupN53W004, rathraimagegroupN53W005, rathraimagegroupN53W006, rathraimagegroupN53W007, rathraimagegroupN53W008, rathraimagegroupN53W009, rathraimagegroupN53W010, rathraimagegroupN53W011, rathraimagegroupN54W004, rathraimagegroupN54W005, rathraimagegroupN54W006, rathraimagegroupN54W007, rathraimagegroupN54W008, rathraimagegroupN54W009, rathraimagegroupN54W010, rathraimagegroupN54W011, rathraimagegroupN55W004, rathraimagegroupN55W005, rathraimagegroupN55W006, rathraimagegroupN55W007, rathraimagegroupN55W008, rathraimagegroupN55W009, rathraimagegroupN55W010, rathraimagegroupN55W011]);
+        
+        
+        
+/* Rathcroghan Visibility Cloak Outline Styles*/
+var RathcroghanVCOStyle = {
+      fillColor: "#940094",
+      color: "#504450",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.01,
+      clickable: false
+    };
+
+	
+/* Rathcroghan Visibility Cloak Outline */
+var RathcroghanVCO1 = L.geoJson.ajax("assets/geojson/RathcroghanVCO.geojson", {style:RathcroghanVCOStyle}).addTo(Rathcroghanvch);
+
+
+/* Rathra Visibility Cloak Outline Styles*/
+var RathraVCOStyle = {
+      fillColor: "#ffb732",
+      color: "#ffc04c",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.1,
+      clickable: false
+    };
+
+	
+/* Rathra Visibility Cloak Outline */
+var RathraVCO1 = L.geoJson.ajax("assets/geojson/RathraVCO.geojson", {style:RathraVCOStyle}).addTo(rathravch);
+
+
+/* Rathcroghan Line */
+var RathcroghanLine = L.geoJson(null, {
+  style: function (feature) {
+    return {
+      color: "#526392",
+      steps: 50,
+	  weight: 2,
+      opacity: 1.0,
+      dashArray: "7 3"
+	};
+  },
+  onEachFeature: function (feature, layer) {}
+});
+$.getJSON("assets/geojson/RathcroghanLine.geojson", function (data) {
+  RathcroghanLine.addData(data);
+});
+
+/* Rathcroghan Line Layer Group */
+var RathcroghanLineGroup = new L.LayerGroup([RathcroghanLine],{ snakingSpeed: 20 });
+
+
+/* Fly-To Corn Hill */
+var FlyCornHill = [53.80727,-7.71598];
+
+$('#button-fly-Cornhill').on('click', function(){
+      
+      map.flyTo(FlyCornHill, 17);
+    });
+
+/* Fly-To Croaghpatrick */
+var FlyCroaghpatrick = [53.7603,-9.6598];
+
+$('#button-fly-Croaghpatrick').on('click', function(){
+      
+      map.flyTo(FlyCroaghpatrick, 15);
+    });
+
+	
+/* Rathra Line */
+var RathraLine = L.geoJson(null, {
+  style: function (feature) {
+    return {
+      color: "#526392",
+      steps: 50,
+	  weight: 2,
+      opacity: 1.0,
+      dashArray: "7 3"
+	};
+  },
+  onEachFeature: function (feature, layer) {}
+});
+$.getJSON("assets/geojson/RathraLine.geojson", function (data) {
+  RathraLine.addData(data);
+});
+
+/* Rathra Line Layer Group */
+var RathraLineGroup = new L.LayerGroup([RathraLine]);
+
+/* Dummy Layer Group */
+var DummyGroup = new L.LayerGroup();
+        
+ 
+var locations = L.layerGroup();
+        
+        
+var locations = L.layerGroup();
+var cruachan = L.layerGroup();	
+
+
+var circle = L.circle([53.80235, -8.30466], 10000, {
+				    weight: 1,
+                    color: '#526392',
+				    fillColor: '#526392',
+				    fillOpacity: 0.3
+				}).addTo(cruachan);
+
+
+var RathcroghanZoom = [53.80226,-8.3065];
+
+				
+var Rathcroghan = L.ExtraMarkers.icon({
+    icon: 'fa-number',
+    number: '1',
+	markerColor: 'violet',
+    shape: 'square',
+    prefix: 'fa'
+  });
+
+  L.marker([53.80226,-8.30435], {icon: Rathcroghan}).addTo(locations);
+
+
+var RathraZoom = [53.7560252,-8.423];  
+  
+var Rathra = L.ExtraMarkers.icon({
+    icon: 'fa-number',
+	number: '3',
+    markerColor: 'yellow',
+    shape: 'square',
+    prefix: 'fa'
+  });
+
+  L.marker([53.7560252,-8.4219697], {icon: Rathra}).addTo(locations);
+ 
+
+var CornhillZoom = [53.80727,-7.717];
+ 
+var Cornhill = L.ExtraMarkers.icon({
+    icon: 'fa-number',
+	number: '2',
+    markerColor: 'violet',
+    shape: 'square',
+    prefix: 'fa'
+  });
+
+  L.marker([53.80727,-7.71598], {icon: Cornhill}).addTo(locations);
+
+var CroaghpatrickZoom = [53.7603,-9.664];
+  
+var Croaghpatrick = L.ExtraMarkers.icon({
+    icon: 'fa-number',
+	number: '4',
+    markerColor: 'yellow',
+    shape: 'square',
+    prefix: 'fa'
+  });
+
+  L.marker([53.7603,-9.6598], {icon: Croaghpatrick}).addTo(locations);
+
+
+var RathcroghanCornhillZoom = [53.8246, -8.2];
+var RathraCroaghpatrickZoom = [53.7828, -9.4];
+var LocationsZoom = [53.8420, -9.5];
+var RathcroghanRathraZoom = [53.7828, -8.3772];
+        
+        
+var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  attribution: 'Map data &copy; 2013 OpenStreetMap contributors'
+              });
+        
+var osm2 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  attribution: 'Map data &copy; 2013 OpenStreetMap contributors'
+              });
+      		
+      
+var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+      			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      		mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+      
+      	
+var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+      		streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+        
+        
+var BING_KEY = 'AmPQVvaKSid_g48EnFJjbYUOyWPlkQh1QGJlsFFZnw1EnJioQ5kvSiv2w7SUaJ9B'
+
+
+var bingLayer = L.tileLayer.bing(BING_KEY)
+        
+        
+var map = L.map('map', {
+        center: [53.8420, -9.5],
+        zoom: 8,
+        zoomControl: false    
+        }).addLayer(grayscale);
+        
+        
+new L.Control.Zoom({ position: 'topright' }).addTo(map);
+        
+var miniMap = new L.Control.MiniMap(osm2, { toggleDisplay: true }).addTo(map);
+        
+mapLink = 
+            '<a href="https://web.archive.org/web/20160505115050/http://openstreetmap.org/">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; ' + mapLink,
+            maxZoom: 18,
+            });
+    
+        
+        $('.slide1').waypoint(function() {
+  		
+    		map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+            map.removeLayer(bingLayer);
+			map.addLayer(grayscale);
+			map.removeLayer(locations);
+            map.removeLayer(cruachan);
+			map.flyTo(LocationsZoom, 8);
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        
+        
+        $('.slide2').waypoint(function() {
+  		
+    		map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+            map.removeLayer(bingLayer);
+			map.addLayer(grayscale);
+			map.addLayer(locations);
+            map.addLayer(cruachan);
+			map.flyTo(LocationsZoom, 8);
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        
+        $('.slide3').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+            map.removeLayer(grayscale);
+			map.addLayer(bingLayer);
+			map.addLayer(locations);
+			map.flyTo(RathcroghanZoom, 17);
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        
+        $('.slide4').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+            map.removeLayer(grayscale);
+			map.addLayer(bingLayer);
+			map.addLayer(locations);
+            map.flyTo(CornhillZoom, 17);
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        
+        $('.slide5').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+            map.removeLayer(grayscale);
+			map.addLayer(bingLayer);
+			map.addLayer(locations);
+            map.flyTo(RathraZoom, 18);
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide6').waypoint(function() {
+  		    
+            map.removeLayer(cruachan);
+            map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+            map.removeLayer(grayscale);
+			map.addLayer(bingLayer);
+    		map.addLayer(locations);
+            map.flyTo(CroaghpatrickZoom, 15);
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide7').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(bingLayer);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+			map.addLayer(grayscale);
+            map.removeLayer(Rathcroghanvch);
+            map.addLayer(locations);
+			map.addLayer(RathcroghanLineGroup);
+            map.flyTo(RathcroghanCornhillZoom, 10);
+			
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide8').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(bingLayer);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+			map.addLayer(grayscale);
+            map.removeLayer(Rathcroghanvch);
+            map.addLayer(locations);
+			map.addLayer(RathcroghanLineGroup);
+            map.addLayer(Rathcroghanvch);
+            map.flyTo(RathcroghanCornhillZoom, 10);
+			
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide9').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+            map.removeLayer(grayscale);
+            map.addLayer(locations);
+			map.addLayer(bingLayer);
+			map.addLayer(RathcroghanLineGroup);
+            map.addLayer(Rathcroghanvch);
+            map.setZoom(14);
+			map.flyTo(CornhillZoom, 15);
+			
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide10').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(bingLayer);
+            map.removeLayer(RathraLineGroup);
+            map.removeLayer(rathravch);
+			map.addLayer(grayscale);
+            map.removeLayer(Rathcroghanvch);
+            map.addLayer(locations);
+			map.addLayer(RathcroghanLineGroup);
+            map.addLayer(Rathcroghanvch);
+            map.flyTo(RathcroghanCornhillZoom, 10);
+			
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide11').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(bingLayer);
+            map.addLayer(grayscale);
+			map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.removeLayer(rathravch);
+            map.addLayer(locations);
+            map.addLayer(RathraLineGroup);
+			map.flyTo(RathraCroaghpatrickZoom, 9);
+			
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide12').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(bingLayer);
+            map.addLayer(grayscale);
+			map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.addLayer(locations);
+            map.addLayer(RathraLineGroup);
+            map.addLayer(rathravch);
+			map.flyTo(RathraCroaghpatrickZoom, 9);
+			
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide13').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(grayscale);
+            map.addLayer(bingLayer);
+			map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.addLayer(locations);
+            map.addLayer(RathraLineGroup);
+            map.addLayer(rathravch);
+			map.flyTo(CroaghpatrickZoom, 14);
+			
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+        $('.slide14').waypoint(function() {
+  		
+    		map.removeLayer(cruachan);
+            map.removeLayer(bingLayer);
+            map.addLayer(grayscale);
+			map.removeLayer(RathcroghanLineGroup);
+            map.removeLayer(Rathcroghanvch);
+            map.addLayer(locations);
+            map.addLayer(RathraLineGroup);
+            map.addLayer(rathravch);
+			map.flyTo(RathraCroaghpatrickZoom, 9);
+			
+  		},
+        {context: '.slidecontent' 
+
+		});
+        
+</script>
+
+</body>
+</html>
